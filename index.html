@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Win Win Security </title>
+</head>
+
+<body id="login">
+    <!--clase desktop-->
+    <article class="login-back ">
+        <section class="container">
+            <div class="row">
+                <div class="col l12 login">
+                    <form class="col l6 right teal lighten-4" action="#">
+                        <!--botón para ingresar con Google-->
+                        <div class="col l12 center google">
+                            <a class="waves-effect waves-light btn" id="btn-google">
+                                <img id="face" class="right" src="images/logo.png" alt=""> Ingresa con</a>
+                        </div>
+                        <div class="input-field name-login">
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">Usuario o correo electrónico</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="pass" type="password" class="validate">
+                            <label for="pass">Contraseña</label>
+                        </div>
+                        <div class="center">
+                            <a class="waves-effect waves-light btn" id="btn-google" href="home.html">Ingresa</a>
+                        </div>
+                        <div class="center">
+                            <h5>ó</h5>
+                        </div>
+                        <!--activa modal para registrarse-->
+                        <div class="col l12 center">
+                            <a class="modal-crea waves-effect waves-light btn modal-trigger" href="#modal1">Crea tu cuenta</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </article>
+    <!--modales-->
+    <div id="modal1" class="modal teal lighten-4 col l6">
+        <div class="modal-content">
+            <div class="row">
+                <form class="col l6">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input placeholder="Nombre completo" id="name" type="text" class="validate">
+                            <label for="first_name"></label>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="Ingresa tu correo" id="email" type="email" class="validate">
+                                <label for="email"></label>
+                            </div>
+                        </div>
+                        <!--ingresa contraseña-->
+                        <div class="input-field col s12">
+                            <input placeholder="Ingresa tu contraseña" id="confirm-password" type="text" class="validate">
+                            <label for="password"></label>
+                        </div>
+                        <!--confirma contraseña-->
+                        <div class="input-field col s12">
+                            <input placeholder="Escribe tú código de tarjeta Win Win Security" id="password" type="text" class="validate">
+                            <label for="password"></label>
+                        </div>
+                        <div class="col s2 modal-footer">
+                            <a href="home.html" class="modal-action modal-close waves-effect waves-light btn">Crear</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script type="text/javascript" src="assets/js/materialize.js"></script>
+</body>
+
+</html>
